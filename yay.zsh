@@ -1,0 +1,1 @@
+alias yay='yay --aur'
