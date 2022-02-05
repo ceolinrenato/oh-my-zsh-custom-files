@@ -1,1 +1,1 @@
-alias update_mirrors='sudo pacman-mirrors --fasttrack 5 && sudo pacman -Syyu'
+alias update_mirrors='sudo pacman-mirrors -c all && sudo pacman -Syyu'
