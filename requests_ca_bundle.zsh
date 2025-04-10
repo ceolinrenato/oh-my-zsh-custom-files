@@ -1,3 +1,6 @@
 #!/usr/bin/env zsh
 
-export REQUESTS_CA_BUNDLE="/etc/ssl/certs/ca-certificates.crt"
+# Check if the current system is not macOS
+if [[ "$(uname)" != "Darwin" ]]; then
+    export REQUESTS_CA_BUNDLE="/etc/ssl/certs/ca-certificates.crt"
+fi
